@@ -1,0 +1,69 @@
+.image-reveal-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 400px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 90%;
+    position: relative;
+    min-height: 200px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.light-switch {
+    width: 100px;
+    height: 50px;
+    background-color: #e9ecef;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.light-switch[data-state="on"] {
+    background-color: #0d6efd;
+}
+
+.switch-knob {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: left 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.light-switch[data-state="on"] .switch-knob {
+    left: 55px;
+    background-color: #fff;
+}

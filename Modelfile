@@ -1,0 +1,12 @@
+FROM ./Qwen25-VL-32B-Instruct-IQ4_NL-2.gguf
+
+TEMPLATE """<|im_start|>system
+You are a helpful assistant that can analyze images and text.<|im_end|>
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""
+
+PARAMETER temperature 0.7
+PARAMETER top_p 0.8
+PARAMETER top_k 20

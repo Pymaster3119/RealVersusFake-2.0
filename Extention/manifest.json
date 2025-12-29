@@ -10,10 +10,10 @@
     "scripting"
   ],
   "host_permissions": [
-    "http://127.0.0.1:5000/*"
+    "http://127.0.0.1:8080/*"
   ],
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' http://127.0.0.1:5000"
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' http://127.0.0.1:8080"
   },
   "background": {
     "service_worker": "background.js"
@@ -36,5 +36,15 @@
       "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["iframeScript.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "externally_connectable":
+  {
+    "matches": ["<all_urls>"]
+  }
 }

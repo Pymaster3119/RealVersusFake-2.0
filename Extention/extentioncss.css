@@ -7,6 +7,26 @@
     text-align: center;
 }
 
+.deceptive-graph-button {
+    background-color: #fd7e14; /* Orange for deceptive graphs */
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ai-and-deceptive-button {
+    background-color: #dc3545; /* Red for both AI and deceptive */
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
 .image-wrapper {
     position: relative;
     display: inline-block;
@@ -66,4 +86,84 @@ body {
 .light-switch[data-state="on"] .switch-knob {
     left: 55px;
     background-color: #fff;
+}
+
+.rvf-alert-button {
+    font-family: inherit;
+}
+
+.rvf-replacement-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 12px;
+}
+
+.rvf-replacement-stage {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+}
+
+.rvf-replacement-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.rvf-replacement-banner {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(13, 110, 253, 0.9);
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.rvf-toggle-original {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(33, 37, 41, 0.85);
+    color: #ffffff;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.rvf-toggle-original:hover,
+.rvf-toggle-original:focus-visible {
+    background: rgba(33, 37, 41, 0.95);
+    transform: translateY(-1px);
+    outline: none;
+}
+
+.rvf-toggle-original:focus-visible {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.35);
+}
+
+.rvf-replacement-info {
+    margin-top: 10px;
+    padding: 10px 12px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #1c1c1c;
+    background: #f8f9fa;
+    border-left: 4px solid #0d6efd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }

@@ -1,0 +1,118 @@
+.frame-1,
+.frame-1 * {
+  box-sizing: border-box;
+}
+.frame-1 {
+  background: #fff4e1;
+  width: 103px;
+  height: 105px;
+  position: relative;
+  overflow: hidden;
+}
+.group-3 {
+  position: absolute;
+  inset: 0;
+}
+.group-2 {
+  width: 3px;
+  height: 2474.08px;
+  position: static;
+  aspect-ratio: 3/2474.08;
+}
+.rectangle-1 {
+  background: #6c8b3a;
+  width: 3px;
+  height: 2474.08px;
+  position: absolute;
+  left: 0px;
+  top: -650.93px;
+}
+.group-1 {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: -11px;
+  top: -11px;
+  overflow: visible;
+}
+.group-4 {
+  position: absolute;
+  inset: 0;
+}
+.group-22 {
+  width: 3px;
+  height: 1172px;
+  position: static;
+  aspect-ratio: 3/1172;
+}
+.rectangle-12 {
+  background: #6c8b3a;
+  width: 3px;
+  height: 1172px;
+  position: absolute;
+  right: -3px;
+  bottom: -1172px;
+  transform-origin: 0 0;
+  transform: rotate(-180deg) scale(1, 1);
+}
+.group-12 {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: -33px;
+  bottom: -33.21px;
+  overflow: visible;
+}
+.this-image-is-ai-generated {
+  color: #6c8b3a;
+  text-align: center;
+  font-family: "CherryBombOne-Regular", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  position: absolute;
+  right: 8.01px;
+  left: 10.990996360778809px;
+  bottom: 44.83%;
+  top: 24.7%;
+  height: 30.48%;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-text-stroke: 0.30000001192092896px #000000;
+}
+.click-to-hide-this-warning {
+  color: #000000;
+  text-align: center;
+  font-family: "CherryBomb-Regular", sans-serif;
+  font-size: 5px;
+  font-weight: 400;
+  position: absolute;
+  right: 23px;
+  left: 21px;
+  bottom: 11.43%;
+  top: 83.81%;
+  height: 4.76%;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-5 {
+  height: 13.57%;
+  position: absolute;
+  left: 11px;
+  bottom: 45.47%;
+  top: 40.95%;
+  overflow: visible;
+}
+.group-6 {
+  height: 13.21%;
+  position: absolute;
+  right: 6.64px;
+  bottom: 45.83%;
+  top: 40.95%;
+  overflow: visible;
+}

@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.env
+.venv/
+venv/
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# Model weights and large binaries
+*.pth
+*.onnx
+*.pt
+
+# Logs
+*.log

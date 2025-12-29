@@ -1,0 +1,28 @@
+digraph Model_Architecture {
+	bgcolor=white fontsize=12 rankdir=LR
+	Input [label="Radio Galaxy Images
+(LOFAR, NVSS, etc.)" fillcolor="#FFF2CC" shape=rect style=filled]
+	YOLO [label="YOLOv8s
+Object Detection
+- Bounding Box Extraction
+- Source Identification" fillcolor="#FFD966" shape=box style=filled]
+	Encoder [label="VAE Encoder
+Residual + Attention Layers
+Dim. Reduction to Latent Space" fillcolor="#F4B183" shape=box style=filled]
+	Latent [label="Latent Vectors (z)
+Compact Representation" fillcolor="#EAD1DC" shape=oval style=filled]
+	Decoder [label="VAE Decoder
+Reconstructs Input (for Training)
+Used for Feature Regularization" fillcolor="#F4B183" shape=box style=filled]
+	Classifier [label="Histogram Gradient Boosting
+Trained on Latent Features
+Predicts Radio Galaxy Morphology" fillcolor="#9DC3E6" shape=box style=filled]
+	Output [label="Predicted Class
+(FRI, FRII, Bent-tail, etc.)" fillcolor="#C5E0B4" shape=rect style=filled]
+	Input -> YOLO
+	YOLO -> Encoder
+	Encoder -> Latent
+	Latent -> Decoder
+	Latent -> Classifier
+	Classifier -> Output
+}

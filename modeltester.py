@@ -1,13 +1,20 @@
-import torch
-from PIL import Image
-print(torch.__version__)
+# Ensure you have the necessary libraries installed
+# pip install transformers torch torchvision
+
 from transformers import pipeline
 
-# Load the model
-pipe = pipeline('image-classification', model="date3k2/vit-real-fake-classification-v3", device=0)
+# 1. Initialize the video classification pipeline with our model
+print("Loading the Deepfake Detection model...")
+detector = pipeline("video-classification", model="Naman712/Deep-fake-detection")
 
-# Predict on an image
-result = pipe(Image.open("ai_generated.jpg"))
-print(result)
-result = pipe(Image.open("real.png"))
+# 2. Provide the path to your video file
+video_path = "/Users/aditya/Downloads/218309_tiny.mp4"
+print(f"Analyzing video: {video_path}...")
+
+# 3. Get the prediction
+result = detector(video_path)
+
+# 4. Print the result
+# The output will be a list of dictionaries with labels ('real' or 'fake') and scores.
+print("Analysis Complete!")
 print(result)
